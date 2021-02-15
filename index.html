@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/lib/moment.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>You are here</title>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html">Home</a>
+      <span id="currentTime"></span>
+
+    </header>
+    <div class="container">
+      <div>
+      </div>
+      <div id="birthdateContainer">
+        
+          <h2 id="daysCounter">When were you born?</h2>
+          <form onsubmit="hideElements(), chosenDate()" id="birthForm">
+            <input id="birthdate" type="date" max="2999-12-31" required></input><br>
+            <input type="submit" value="Calculate" formmethod="dialog" id="birthdateSubmit"/>
+          </form>
+          
+          
+        </div>
+      </div>
+    <footer>
+      <div>
+        <a href="https://www.scb.se/hitta-statistik/sverige-i-siffror/manniskorna-i-sverige/medellivslangd-i-sverige/" id="footerText">
+          * Number based on a person with an expected lifetime of 83 years.
+        </a>
+      </div>
+    </footer>
+      <script src="/lib/index.js"></script>
+  </body>
+</html>
