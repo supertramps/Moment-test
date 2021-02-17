@@ -13,7 +13,7 @@ body {
   height: 100vh;
   background: linear-gradient(
     180deg,
-    rgba(5, 30, 32, 1) 13%,
+    rgb(15, 95, 100) 13%,
     rgba(218, 227, 228, 1) 100%
   );
 }
@@ -26,7 +26,7 @@ p {
 footer {
   font-size: 0.6rem;
   text-align: center;
-  /* padding-bottom: 2rem; */
+  padding-bottom: 2rem;
   background-color: #dae3e4;
   margin-top: 2rem;
 }
@@ -37,8 +37,10 @@ header {
   align-items: center;
   height: 4rem;
   font-size: 0.9rem;
-  background-color: #051e20;
+  background-color: rgb(15, 95, 100);
   color: #dae3e4;
+  max-width: 50%;
+  margin: auto;
 }
 
 input#birthdate::-webkit-calendar-picker-indicator {
@@ -52,7 +54,6 @@ a {
 
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100%;
   width: 40%;
@@ -104,5 +105,9 @@ a {
 
   p {
     font-size: 0.8rem;
+  }
+
+  header {
+    max-width: 100%;
   }
 }
